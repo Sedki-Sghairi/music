@@ -197,7 +197,6 @@ footer .container {
 	justify-content: space-between;
 	align-items: center;
 	height: 100%;
-	max-width: auto;
 }
 .footer {
 	font-weight: bold;
@@ -276,10 +275,10 @@ footer .container {
 		width: .7rem;
 	}
 	footer {
-		padding: 0 .25rem;
+		padding: 0 .15rem;
 	}
-	.footer {
-		font-size: .7rem;
+	.footer a {
+		font-size: .6rem;
 	}
 	.social-media img {
 		width: .7rem;
