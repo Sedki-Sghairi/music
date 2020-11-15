@@ -158,6 +158,10 @@ header {
 		width: 65vw;
 		height: 65vw;
 	}
+	.links:first-child,
+	.links li:first-child {
+		margin-right: .4rem;
+	}
 }
 @keyframes move {
 	0% {
