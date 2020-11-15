@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
 * {
 	box-sizing: border-box;
 }
@@ -7,10 +10,13 @@ body {
 	background-color: #46485e;
 	color: #fff;
 	min-height: 100vh;
+	font-family: 'Playfair Display', serif;
+	overflow: hidden;
 }
 a {
 	text-decoration: none;
 	color: inherit;
+	transition: all .3s linear;
 }
 ul {
 	list-style-type: none;
@@ -21,20 +27,32 @@ header {
 	align-items: center;
 	height: 5rem;
 }
+header .links {
+	font-size: 1.3rem;
+}
 .brand {
 	display: flex;
 	align-items: center;
 }
 .brand img {
-	width: 4em;
+	width: 5rem;
 }
-.brand,
+
 .brand-name {
-	margin-left: 1rem;
+	font-family: 'Pacifico', cursive;
+	color: #cad6e0;
+	font-size: 1.7rem;
 }
-.brand-name {
-	font-size: 1.5rem;
+
+.brand-name:hover {
+	color: rgb(255, 162, 255);
 }
+.brand-name span:hover,
+.brand-name span {
+	font-size: 1rem;
+	color: #ff9c8f;
+}
+
 .links {
 	display: flex;
 	align-items: center;
@@ -45,7 +63,7 @@ header {
 }
 .social-media a:hover,
 .links a:hover {
-	color: rgb(218, 209, 192);
+	color: rgb(240, 156, 240);
 }
 .container {
 	max-width: 1200px;
@@ -107,7 +125,7 @@ header {
 	position: absolute;
 	width: 25vw;
 	height: 25vw;
-	background-color: rgba(255, 0, 0, .08);
+	background-color: rgba(255, 0, 0, .1);
 	border-radius: 50%;
 	bottom: 5vh;
 	left: 5vh;
@@ -128,7 +146,7 @@ header {
 	content: '';
 	width: 100%;
 	height: 100%;
-	background-color: rgba(255, 153, 0, 0.05);
+	background-color: rgba(255, 153, 0, 0.1);
 	border-radius: 50%;
 	transform: translate(50%, 50%);
 }
@@ -137,7 +155,7 @@ header {
 	position: absolute;
 	width: 15vw;
 	height: 15vw;
-	background-color: rgba(0, 255, 170, 0.03);
+	background-color: rgba(0, 255, 170, 0.1);
 	border-radius: 50%;
 	top: 0;
 	right: 0;
@@ -200,7 +218,7 @@ footer .container {
 }
 .footer {
 	font-weight: bold;
-	font-size: .8rem;
+	font-size: .9rem;
 }
 .discover {
 	flex-grow: 1;
@@ -215,6 +233,10 @@ footer .container {
 	align-items: flex-start;
 	justify-content: center;
 	text-transform: capitalize;
+	margin-left: .5rem;
+}
+.discover-txt span {
+	color: #fcc100;
 }
 .discover-img {
 	background-image: url('./images/covers.jpg');
@@ -239,6 +261,7 @@ footer .container {
 	padding: .5rem;
 	margin-right: .5rem;
 	cursor: pointer;
+	width: 5rem;
 }
 .icon img {
 	width: 2rem;
@@ -297,10 +320,12 @@ footer .container {
 .join h1 {
 	flex-grow: 1;
 	text-align: center;
+	text-transform: capitalize;
 }
 .join span {
 	color: #ff8383;
 	font-size: 3rem;
+	text-transform: lowercase;
 }
 .join form {
 	margin: 0 auto;
@@ -309,6 +334,8 @@ footer .container {
 	min-width: 330px;
 	height: 20rem;
 	margin: 1rem;
+	border-radius: .7rem;
+	padding: 0.8rem;
 }
 .join ul {
 	height: 100%;
@@ -322,9 +349,7 @@ footer .container {
 	margin: 1rem auto;
 	text-transform: capitalize;
 }
-.join li:last-child {
-	margin-top: 2rem;
-}
+
 .join li:last-child input {
 	letter-spacing: 0.15rem;
 	font-weight: 600;
@@ -335,4 +360,5 @@ input {
 	background-color: transparent;
 	border: #385f6e solid 1px;
 	color: inherit;
+	border-radius: .5rem;
 }
