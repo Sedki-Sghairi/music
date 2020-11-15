@@ -246,7 +246,7 @@ footer .container {
 .social-media ul {
 	display: flex;
 }
-.social-media li:first-child {
+.social-media li {
 	margin-right: .5rem;
 }
 .social-media a {
@@ -269,11 +269,12 @@ footer .container {
 		margin-right: .25rem;
 	}
 	.social-media a {
-		margin-left: .15rem;
+		margin: 0;
 	}
-	.social-media img {
-		width: .7rem;
+	.social-media a:last-child {
+		margin-right: .5rem;
 	}
+
 	footer {
 		padding: 0 .15rem;
 	}
