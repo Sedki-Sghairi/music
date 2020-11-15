@@ -158,10 +158,6 @@ header {
 		width: 65vw;
 		height: 65vw;
 	}
-	.links:first-child,
-	.links li:first-child {
-		margin-right: .4rem;
-	}
 }
 @keyframes move {
 	0% {
@@ -275,6 +271,15 @@ footer .container {
 	}
 	.social-media a {
 		margin-left: .15rem;
+	}
+	.social-media img {
+		width: .7rem;
+	}
+	footer {
+		padding: 0 .25rem;
+	}
+	.footer {
+		font-size: .7rem;
 	}
 	.social-media img {
 		width: .7rem;
